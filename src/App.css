@@ -5,11 +5,14 @@
   align-items: center;
   
 }
-
-.conteiner {
+.finale-conteiner{
+  margin-top: 25px;
   background-color: #61ce70;
   border-radius: 4px;
   margin: 30px;
+}
+.conteiner {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +29,28 @@
   margin: 0;
 }
 .logo {
-  background: url(./twitter.png);
+  
   height: 30px;
   border: #61ce70;
 }
+.inputcheckbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo1 {
+  
+  height: 300px;
+  border: #61ce70;
+}
+.conteiner1 {
+  display: flex;
+  flex-direction:  row;
+  justify-content: space-around;
+  align-items: center;
+  
+  
+  
+}
+  
+  

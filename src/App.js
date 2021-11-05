@@ -19,13 +19,10 @@ const App = () => {
   const style = {
     color: "white",
   };
-useEffect(() => {
+  useEffect(() => {
+  
  const req = new XMLHttpRequest();
- req.open(
-   "GET",
-   "http://test-env.eba-m8sdnsqs.us-east-2.elasticbeanstalk.com/categories",
-   true
- );
+ req.open("GET", "https://siftin.herokuapp.com/categories", true);
  req.send();
 
  req.onload = () => {
@@ -35,7 +32,7 @@ useEffect(() => {
      
      setData(myresponseText);
      
-   }
+ }
  };
 
 }, []);
@@ -75,90 +72,92 @@ useEffect(() => {
     <div className="main--conteiner">
       <div>
         <header className="main--conteiner">
-          <h1>siftin</h1>
-          <img class="logo" src={siftin} />
-          <img class="logo" src={sifter} />
+          
+          <img className="logo1" src={siftin} />
+          
         </header>
-        <label>
-          <input
-            type="checkbox"
-            checked={checkedBTC[0]}
-            onChange={onChangeBTC}
-          />
-          BTC
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={checkedETH[0]}
-            onChange={onChangeETH}
-          />
-          ETH
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={checkedXRP[0]}
-            onChange={onChangeXRP}
-          />
-          XRP
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={checkedDOT[0]}
-            onChange={onChangeDOT}
-          />
-          DOT
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={checkedADA[0]}
-            onChange={onChangeADA}
-          />
-          ADA
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={checkedBNB[0]}
-            onChange={onChangeBNB}
-          />
-          BNB
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={checkedDOGE[0]}
-            onChange={onChangeDOGE}
-          />
-          DOGE
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={checkedXLM[0]}
-            onChange={onChangeXLM}
-          />
-          XLM
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={checkedUNI[0]}
-            onChange={onChangeUNI}
-          />
-          UNI
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={checkedTRX[0]}
-            onChange={onChangeTRX}
-          />
-          TRX
-        </label>
+        <div className="inputcheckbox">
+          <label>
+            <input
+              type="checkbox"
+              checked={checkedBTC[0]}
+              onChange={onChangeBTC}
+            />
+            BTC
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={checkedETH[0]}
+              onChange={onChangeETH}
+            />
+            ETH
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={checkedXRP[0]}
+              onChange={onChangeXRP}
+            />
+            XRP
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={checkedDOT[0]}
+              onChange={onChangeDOT}
+            />
+            DOT
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={checkedADA[0]}
+              onChange={onChangeADA}
+            />
+            ADA
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={checkedBNB[0]}
+              onChange={onChangeBNB}
+            />
+            BNB
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={checkedDOGE[0]}
+              onChange={onChangeDOGE}
+            />
+            DOGE
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={checkedXLM[0]}
+              onChange={onChangeXLM}
+            />
+            XLM
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={checkedUNI[0]}
+              onChange={onChangeUNI}
+            />
+            UNI
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={checkedTRX[0]}
+              onChange={onChangeTRX}
+            />
+            TRX
+          </label>
+        </div>
         {data
           .filter((d) => {
             const temparray = [
@@ -176,28 +175,33 @@ useEffect(() => {
             let i = 0;
             for (let t of temparray) {
               if (t[0]) {
-                console.log("idajdis");
+                
                 if (d.indices.includes(t[1])) {
-                  console.log("idajdis")
+                  
                   return d;
                 }
-              } 
+              }
             }
             return null;
           })
           .map((d, index) => {
             return (
-              <div className="conteiner">
-                <img class="logo" src={logo} />
-                <p className="main--top" key={d.id} style={style}>
-                  twitter {d.date.slice(11, 16)}
-                </p>
-                <p className="border">
-                  {d.sources}
-                  {": "}
-                  {d.content}
-                </p>
-                <p className="main--top">{d.indices}</p>
+              <div className="finale-conteiner">
+                <div className="conteiner1">
+                  <img className="logo" src={logo} />
+                  <p className="main--top" key={d.id} >
+                    Twitter
+                  </p>
+                  <p> {d.date.slice(11, 16)}</p>
+                </div>
+                <div className="conteiner">
+                  <p className="border">
+                    {d.sources}
+                    {": "}
+                    {d.content}
+                  </p>
+                  <p className="main--top">{d.indices}</p>
+                </div>
               </div>
             );
           })}
