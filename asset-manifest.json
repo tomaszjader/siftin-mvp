@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/siftin-mvp/static/css/main.06f9f2ba.chunk.css",
-    "main.js": "/siftin-mvp/static/js/main.9f19794a.chunk.js",
-    "main.js.map": "/siftin-mvp/static/js/main.9f19794a.chunk.js.map",
+    "main.css": "/siftin-mvp/static/css/main.c999d992.chunk.css",
+    "main.js": "/siftin-mvp/static/js/main.107b3697.chunk.js",
+    "main.js.map": "/siftin-mvp/static/js/main.107b3697.chunk.js.map",
     "runtime-main.js": "/siftin-mvp/static/js/runtime-main.cd16df8c.js",
     "runtime-main.js.map": "/siftin-mvp/static/js/runtime-main.cd16df8c.js.map",
     "static/js/2.33617022.chunk.js": "/siftin-mvp/static/js/2.33617022.chunk.js",
@@ -10,16 +10,16 @@
     "static/js/3.7232fcfa.chunk.js": "/siftin-mvp/static/js/3.7232fcfa.chunk.js",
     "static/js/3.7232fcfa.chunk.js.map": "/siftin-mvp/static/js/3.7232fcfa.chunk.js.map",
     "index.html": "/siftin-mvp/index.html",
-    "static/css/main.06f9f2ba.chunk.css.map": "/siftin-mvp/static/css/main.06f9f2ba.chunk.css.map",
+    "static/css/main.c999d992.chunk.css.map": "/siftin-mvp/static/css/main.c999d992.chunk.css.map",
     "static/js/2.33617022.chunk.js.LICENSE.txt": "/siftin-mvp/static/js/2.33617022.chunk.js.LICENSE.txt",
     "static/media/logo4.974d85d7.png": "/siftin-mvp/static/media/logo4.974d85d7.png",
     "static/media/sito.09a39332.png": "/siftin-mvp/static/media/sito.09a39332.png",
-    "static/media/twitter.27cda7bd.png": "/siftin-mvp/static/media/twitter.27cda7bd.png"
+    "static/media/twitter.f963dcac.png": "/siftin-mvp/static/media/twitter.f963dcac.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cd16df8c.js",
     "static/js/2.33617022.chunk.js",
-    "static/css/main.06f9f2ba.chunk.css",
-    "static/js/main.9f19794a.chunk.js"
+    "static/css/main.c999d992.chunk.css",
+    "static/js/main.107b3697.chunk.js"
   ]
 }
