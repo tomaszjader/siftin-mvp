@@ -158,7 +158,9 @@ const App = () => {
             TRX
           </label>
         </div>
-        {data
+        {
+          
+          data
           .filter((d) => {
             const temparray = [
               checkedBTC,
@@ -183,7 +185,7 @@ const App = () => {
               }
             }
             return null;
-          })
+          }).sort((a,b)=>b.id-a.id)
           .map((d, index) => {
             return (
               <div className="finale-conteiner">
