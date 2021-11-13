@@ -72,9 +72,7 @@ const App = () => {
     <div className="main--conteiner">
       <div>
         <header className="main--conteiner">
-          
           <img className="logo1" src={siftin} />
-          
         </header>
         <div className="inputcheckbox">
           <label>
@@ -158,9 +156,7 @@ const App = () => {
             TRX
           </label>
         </div>
-        {
-          
-          data
+        {data
           .filter((d) => {
             const temparray = [
               checkedBTC,
@@ -177,21 +173,23 @@ const App = () => {
             let i = 0;
             for (let t of temparray) {
               if (t[0]) {
-                
                 if (d.indices.includes(t[1])) {
-                  
                   return d;
                 }
               }
             }
             return null;
-          }).sort((a,b)=>b.id-a.id)
+          })
+          .sort((a, b) => b.id - a.id)
+          .filter(
+            (v, i, a) => a.findIndex((t) => t.content === v.content) === i
+          )
           .map((d, index) => {
             return (
               <div className="finale-conteiner">
                 <div className="conteiner1">
                   <img className="logo" src={logo} />
-                  <p className="main--top" key={d.id} >
+                  <p className="main--top" key={d.id}>
                     Twitter
                   </p>
                   <p> {d.date.slice(11, 16)}</p>
@@ -200,7 +198,9 @@ const App = () => {
                   <p className="border">
                     {d.sources}
                     {": "}
-                    {d.content}
+                    {d.content.search("https:")
+                      ? d.content.slice(0,d.content.search("https://"))
+                      : d.content}
                   </p>
                   <p className="main--top">{d.indices}</p>
                 </div>
