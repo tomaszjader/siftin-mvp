@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/siftin-mvp/static/css/main.438460a0.chunk.css",
+    "main.css": "/siftin-mvp/static/css/main.a44fb699.chunk.css",
     "main.js": "/siftin-mvp/static/js/main.9509eaaa.chunk.js",
     "main.js.map": "/siftin-mvp/static/js/main.9509eaaa.chunk.js.map",
     "runtime-main.js": "/siftin-mvp/static/js/runtime-main.57e5ce73.js",
@@ -12,7 +12,7 @@
     "static/js/3.ca825a1d.chunk.js.map": "/siftin-mvp/static/js/3.ca825a1d.chunk.js.map",
     "index.html": "/siftin-mvp/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/siftin-mvp/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.438460a0.chunk.css.map": "/siftin-mvp/static/css/main.438460a0.chunk.css.map",
+    "static/css/main.a44fb699.chunk.css.map": "/siftin-mvp/static/css/main.a44fb699.chunk.css.map",
     "static/js/2.c29307b9.chunk.js.LICENSE.txt": "/siftin-mvp/static/js/2.c29307b9.chunk.js.LICENSE.txt",
     "static/media/logo4.8d5ba7c6.png": "/siftin-mvp/static/media/logo4.8d5ba7c6.png",
     "static/media/sito.9e667146.png": "/siftin-mvp/static/media/sito.9e667146.png",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.57e5ce73.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.c29307b9.chunk.js",
-    "static/css/main.438460a0.chunk.css",
+    "static/css/main.a44fb699.chunk.css",
     "static/js/main.9509eaaa.chunk.js"
   ]
 }
