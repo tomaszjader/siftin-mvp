@@ -6,24 +6,24 @@ import siftin from "./logo4.png";
 
 //import { MDBSwitch } from "mdbreact";
 
-import { Navbar, Nav, Container, NavDropdown, Button,Form } from "react-bootstrap";
-const NavBars = ({ onChangeBTC,checkedBTC,checkedETH }) => {
-  return (
-    <div></div>
-  );
+import {
+  Navbar,
+  Nav,
+  Container,
+  NavDropdown,
+  Button,
+  Form,
+} from "react-bootstrap";
+const NavBars = ({ onChangeBTC, checkedBTC, checkedETH }) => {
+  return <div></div>;
 };
-
-
-
-
 
 const App = () => {
   const [data, setData] = useState([]);
   const [name, setName] = useState(() => {
- 
-  const saved = localStorage.getItem("name");
-  const initialValue = JSON.parse(saved);
-  return initialValue || "";
+    const saved = localStorage.getItem("name");
+    const initialValue = JSON.parse(saved);
+    return initialValue || "";
   });
   const [cryptoData, setCryptoData] = useState([]);
   const [checkedBTC, setCheckedBTC] = React.useState([false, "BTC"]);
@@ -41,6 +41,12 @@ const App = () => {
   };
   const [darkMode, setDarkMode] = useState(false);
   useEffect(() => {
+    var img = "/twitter.png";
+    var text = 'HEY! Your task "'  + '" is now overdue.';
+    var notification = new Notification("To do list", {
+      body: text,
+      icon: img,
+    });
     const req = new XMLHttpRequest();
     req.open("GET", "https://siftin.herokuapp.com/categories", true);
     req.send();
@@ -55,16 +61,26 @@ const App = () => {
     };
     fetch("https://siftin.herokuapp.com/crypto")
       .then((response) => response.json())
-      .then(
-        (d) => {
-          console.log(d);
-          setCryptoData(d);
-        }
-      );
-
+      .then((d) => {
+        console.log(d);
+        setCryptoData(d);
+      });
   }, []);
   useEffect(() => {
+    setInterval(loadCrypto, 60000);
+  }, []);
+  const  loadCrypto = () => {
+    fetch("https://siftin.herokuapp.com/categories")
+      .then((response) => response.json())
+      .then((d) => {
+        console.log(d);
+        setData(d);
+      });
+  };
+
+  useEffect(() => {
     const temparray = [
+
       checkedBTC,
       checkedETH,
       checkedXRP,
@@ -102,9 +118,8 @@ const App = () => {
         }
       }
     }
-    
   }, []);
-  
+
   const onChangeBTC = () => {
     setCheckedBTC([!checkedBTC[0], "BTC"]);
     localStorage.setItem(checkedBTC[1], !checkedBTC[0]);
@@ -286,31 +301,47 @@ const App = () => {
                 <NavDropdown.Item href="#action/3.4">CHF</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.5">PLN</NavDropdown.Item>
               </NavDropdown>
+              <NavDropdown
+                title="user"
+                id="collasible-nav-dropdown"
+                
+              >
+                <NavDropdown.Item href="#action/3.1">
+                  Portfolio
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Dark mode
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">
+                  Currency: USD
+                </NavDropdown.Item>
+
+                <NavDropdown.Item href="#action/3.4">Settings</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.5">
+                  My account
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.6">Log out</NavDropdown.Item>
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
       <div>
-        
         <header className="main--conteiner">
           <img className="logo1" src={siftin} />
         </header>
         <div className="crypto">
-          {cryptoData
-            .map((d) => {
-              return (
-                <div className="crypto-blox">
-                  <p>{d.name}</p>
-                  <p>
-                    {d.price.slice(0, d.price.indexOf('.')+3 || d.price.lenght)}
-                    {console.log("d "+ d.price.search('.'))
-                    }
-                  </p>
-                </div>
-              );
-            })
-          }
+          {cryptoData.map((d) => {
+            return (
+              <div className="crypto-blox">
+                <p>{d.name}</p>
+                <p>
+                  {d.price.slice(0, d.price.indexOf(".") + 3 || d.price.lenght)}
+                </p>
+              </div>
+            );
+          })}
         </div>
         <div className="inputcheckbox"></div>
         {data
@@ -371,9 +402,7 @@ const App = () => {
   );
 };
 const Navbars = () => {
-  return (
-   <div></div>
-  );
+  return <div></div>;
 };
 
 export default App;
