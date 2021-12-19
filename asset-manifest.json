@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/siftin-mvp/static/css/main.416ffb6b.chunk.css",
-    "main.js": "/siftin-mvp/static/js/main.d1f659f9.chunk.js",
-    "main.js.map": "/siftin-mvp/static/js/main.d1f659f9.chunk.js.map",
+    "main.css": "/siftin-mvp/static/css/main.7fe85efc.chunk.css",
+    "main.js": "/siftin-mvp/static/js/main.9ede4fd8.chunk.js",
+    "main.js.map": "/siftin-mvp/static/js/main.9ede4fd8.chunk.js.map",
     "runtime-main.js": "/siftin-mvp/static/js/runtime-main.2c4f1fed.js",
     "runtime-main.js.map": "/siftin-mvp/static/js/runtime-main.2c4f1fed.js.map",
     "static/css/2.0a9ec390.chunk.css": "/siftin-mvp/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.4d20913f.chunk.js": "/siftin-mvp/static/js/2.4d20913f.chunk.js",
-    "static/js/2.4d20913f.chunk.js.map": "/siftin-mvp/static/js/2.4d20913f.chunk.js.map",
+    "static/js/2.96ccf6b2.chunk.js": "/siftin-mvp/static/js/2.96ccf6b2.chunk.js",
+    "static/js/2.96ccf6b2.chunk.js.map": "/siftin-mvp/static/js/2.96ccf6b2.chunk.js.map",
     "static/js/3.165e9f49.chunk.js": "/siftin-mvp/static/js/3.165e9f49.chunk.js",
     "static/js/3.165e9f49.chunk.js.map": "/siftin-mvp/static/js/3.165e9f49.chunk.js.map",
     "index.html": "/siftin-mvp/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/siftin-mvp/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.416ffb6b.chunk.css.map": "/siftin-mvp/static/css/main.416ffb6b.chunk.css.map",
-    "static/js/2.4d20913f.chunk.js.LICENSE.txt": "/siftin-mvp/static/js/2.4d20913f.chunk.js.LICENSE.txt",
+    "static/css/main.7fe85efc.chunk.css.map": "/siftin-mvp/static/css/main.7fe85efc.chunk.css.map",
+    "static/js/2.96ccf6b2.chunk.js.LICENSE.txt": "/siftin-mvp/static/js/2.96ccf6b2.chunk.js.LICENSE.txt",
     "static/media/logo4-white.c693e7d4.png": "/siftin-mvp/static/media/logo4-white.c693e7d4.png",
     "static/media/logo4.8d5ba7c6.png": "/siftin-mvp/static/media/logo4.8d5ba7c6.png",
     "static/media/moon-black.3faf560f.svg": "/siftin-mvp/static/media/moon-black.3faf560f.svg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.2c4f1fed.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.4d20913f.chunk.js",
-    "static/css/main.416ffb6b.chunk.css",
-    "static/js/main.d1f659f9.chunk.js"
+    "static/js/2.96ccf6b2.chunk.js",
+    "static/css/main.7fe85efc.chunk.css",
+    "static/js/main.9ede4fd8.chunk.js"
   ]
 }
