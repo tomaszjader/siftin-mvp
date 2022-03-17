@@ -442,9 +442,13 @@ setCryptoLength(d.length);
                       .filter(
                         (v, i, a) => a.findIndex((t) => t.name === v.name) === i
                       )
-                      .map((d) => {
+                      .map((d, i) => {
                         return (
-                          <div className="crypto-blox">
+                          <div
+                            className={
+                              i % 2 == 0 ? "crypto-blox-1" : "crypto-blox"
+                            }
+                          >
                             <p>
                               {d.indices}{" "}
                               {d.price.slice(
@@ -516,7 +520,7 @@ setCryptoLength(d.length);
                           <p className="main--top">{d.indices}</p>
                         </div>
                       </a>
-                      <Icon
+                      {/* <Icon
                         path={mdiThumbUp}
                         title="User Profile"
                         size={1}
@@ -535,7 +539,7 @@ setCryptoLength(d.length);
                         rotate={0}
                         color={darkMode ? "white" : "black"}
                         onClick={() => onClickUp(d.id, 0)}
-                      />
+                      /> */}
                     </div>
                   );
                 })}

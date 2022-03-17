@@ -96,16 +96,28 @@ background-color:#6c757d;
   background-color:white;
  }
  .crypto{
-   
+   font-weight: bold;
    display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 30px;
+  
  }
  .crypto-blox{
   background-color: #6c757d;
-   height: 80px;
-   width: 80px;
+   height: 25px;
+   width: 200px;
+   display: flex;
+   
+   justify-content: center;
+  
+ }
+ .crypto-blox-1{
+  background-color: #B3B8BD;
+   height: 25px;
+   width: 200px;
+   display: flex;
+   
+   justify-content: center;
   
  }
  .crypto-blox1 {
