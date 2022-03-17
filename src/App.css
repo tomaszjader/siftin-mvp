@@ -1,4 +1,7 @@
-
+.margines-gorny{
+  padding-top: 10px;
+ align-items: baseline;
+}
 .main--conteiner {
   display: flex;
   justify-content: center;
@@ -7,6 +10,10 @@
   
   
 }
+.centownie{
+  justify-content: center;
+}
+
 .finale-conteiner{
   margin-top: 25px;
   background-color: #61ce70;
@@ -17,7 +24,10 @@
   color: black;
 
 }
-.conteiner {
+.margines{
+  margin-right: 90px;
+}
+.conteiner2 {
   
   display: flex;
   justify-content: center;
@@ -34,8 +44,9 @@
   margin-bottom: 0 ;
 }
 .main--top {
-  margin: 0;
+  padding-top: 10px;
   font-weight: bold;
+  align-items: baseline;
 }
 .logo {
   
@@ -62,6 +73,9 @@
   
   
 }
+.navbarclass{
+background-color:#6c757d;
+}
 .bold{
   font-weight: bold;
   
@@ -70,13 +84,19 @@
    
    height: 30px;
  } 
+ .light-navbarclass{
+   background-color: #f8f9fa;
+ }
  .dark-mode{
-  background-color:#6c757d;
+   
+   background-color: #212529;
  }
  .light-mode{
-
+   
+  background-color:white;
  }
  .crypto{
+   
    display: flex;
   flex-direction: row;
   justify-content: center;
@@ -84,10 +104,16 @@
  }
  .crypto-blox{
   background-color: #6c757d;
+   height: 80px;
+   width: 80px;
   
  }
+ .crypto-blox1 {
+   
+color: #6c757d;
+ }
  
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px) {
   .finale-conteiner{
   margin-top: 25px;
   background-color: #61ce70;
@@ -95,4 +121,24 @@
   margin: 30px;
  color: black;
 }
+
+
+ .crypto{
+   overflow: scroll;
+   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+ }
+}
+.svg-white{
+  filter: invert(100%);
+  width: 30px;
+
+}
+.svg-black{
+width: 30px;
+}
+.left-item{
+  float: left;
 }
